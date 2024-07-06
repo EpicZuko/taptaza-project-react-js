@@ -7,7 +7,7 @@ const Newsletter = () => {
   return (
     <NewsletterContainer images={sletter} id="kontakt">
       <NewsletterH1Styled>Еще остались вопросы?</NewsletterH1Styled>
-      <NumberStyled>+996 (777) 222 333</NumberStyled>
+      <NumberStyled>+996 (509) 570 063</NumberStyled>
       <NewSletterTextStyled>
         Наши менеджеры всегда на связи с Заказчиками во всех этапах
         сотрудничества с нами.
