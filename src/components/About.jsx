@@ -163,6 +163,10 @@ const ContainerStyled = styled.div`
   border-radius: 20px;
   padding-top: 100px;
   padding-bottom: 100px;
+  @media (max-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 `;
 const SectionStyled = styled.section`
   background: rgba(244, 245, 247, 1);
@@ -248,6 +252,7 @@ const AboutContainer = styled.div`
   margin-top: 100px;
 
   @media (max-width: 768px) {
+    margin-top: 50px;
     flex-direction: column;
     align-items: center;
   }
@@ -365,7 +370,7 @@ const WhyUsStyled = styled.h1`
   margin-bottom: 35px;
   @media (max-width: 768px) {
     margin-bottom: 50px;
-    font-size: 24px;
+    font-size: 35px;
   }
   @media (max-width: 375px) {
     margin-bottom: 50px;
@@ -403,7 +408,7 @@ const TextStyledWhyUsStyled = styled.p`
     /* margin: 0px; */
     width: 80%;
     font-family: "Cormorant Garamond", serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 36.33px;
     text-align: center;
@@ -430,13 +435,13 @@ const RegistrationH1Styled = styled.h1`
   /* text-align: center; */
   @media (max-width: 768px) {
     font-family: Cormorant Garamond;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 36.33px;
   }
   @media (max-width: 375px) {
     font-family: Cormorant Garamond;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 36.33px;
   }
@@ -456,7 +461,7 @@ const RegistrationTextStyled = styled.p`
   margin-bottom: 45px;
   @media (max-width: 768px) {
     font-family: Cormorant Garamond;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 30.28px;
     text-align: left;
@@ -466,7 +471,7 @@ const RegistrationTextStyled = styled.p`
   }
   @media (max-width: 375px) {
     font-family: Cormorant Garamond;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 30.28px;
     text-align: left;
@@ -484,9 +489,9 @@ const RegistrationStyled = styled.div`
 const ContainerQualityStyled = styled.div`
   margin-top: 100px;
   @media (max-width: 768px) {
-    margin-top: 150px;
+    margin-top: 50px;
   }
   @media (max-width: 375px) {
-    margin-top: 150px;
+    margin-top: 50px;
   }
 `;
