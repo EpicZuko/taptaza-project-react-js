@@ -151,6 +151,9 @@ const NavItem = styled(Link)`
   &:hover {
     color: #e7717d;
   }
+  @media (max-width: 768px) {
+    margin-left: 4px;
+  }
 `;
 
 const NavigationStyled = styled.nav`
