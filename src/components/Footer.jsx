@@ -17,9 +17,13 @@ export function Footers() {
             одежды первого, второго и третьего слоя.
           </p>
           <div className="flex space-x-4 mt-4">
-            <Footer.Icon href="#" icon={BsWhatsapp} className="text-pink-500" />
             <Footer.Icon
-              href="#"
+              href="https://api.whatsapp.com/send?phone=996509570063"
+              icon={BsWhatsapp}
+              className="text-pink-500"
+            />
+            <Footer.Icon
+              href="https://www.instagram.com/taptaza.fabric.kg?igsh=MXZ6bW1oMDVuZHB4MQ=="
               icon={BsInstagram}
               className="text-pink-500"
             />
@@ -36,7 +40,7 @@ export function Footers() {
               <span className="mr-2">•</span> Звоните с Пн-Сб: 9.00-18.00
             </Footer.Link>
             <Footer.Link
-              href="#"
+              href="https://api.whatsapp.com/send?phone=996509570063"
               className="flex items-center text-lg font-medium"
             >
               <div className="flex items-center">
@@ -58,16 +62,16 @@ export function Footers() {
               </div>
             </Footer.Link>
             <Footer.Link
-              href="mailto:kgtexoffice@gmail.com"
+              href="mailto:taptazafabric@gmail.com"
               className="flex items-center text-lg font-medium"
             >
               <div className="flex items-center">
                 <img src={message} alt="email icon" className="w-6 h-6 mr-2" />
-                <span>Эл. адрес: kgtexoffice@gmail.com</span>
+                <span>Эл. адрес: taptazafabric@gmail.com</span>
               </div>
             </Footer.Link>
             <Footer.Link
-              href="https://api.whatsapp.com/send?phone=996550365566"
+              href="https://api.whatsapp.com/send?phone=996509570063"
               className="flex items-center text-lg font-medium"
             >
               <button
