@@ -319,7 +319,7 @@ const ImagesStyledAbout = styled.img`
   }
 
   @media (max-width: 480px) {
-    left: 185px;
+    left: 129px;
     top: 290px;
     width: 240px;
     height: 240px;
