@@ -255,7 +255,7 @@ const AboutContainer = styled.div`
     margin-top: 50px;
     flex-direction: column;
     align-items: center;
-    gap: 100px;
+    gap: 180px;
   }
 `;
 
