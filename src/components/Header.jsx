@@ -50,7 +50,7 @@ const Header = () => {
   return (
     <div id="home">
       <HeaderStyled isSticky={isSticky}>
-        <HeaderLogo src={Logo} />
+        <HeaderLogo src={Logo} alt="..." />
         <MobileMenuToggle onClick={toggleMenu}>
           {isMenuOpen ? (
             <FaTimes className="text-white" />
@@ -104,7 +104,7 @@ const Header = () => {
         <HeaderContent>
           <Title>ШВЕЙНОЕ ПРОИЗВОДСТВО ПОЛНОГО ЦИКЛА В БИШКЕКЕ</Title>
           <Description>
-            Наша фабрика «ТапТаза» - всегда рада выполнить ваши заказы в пошиве
+            Наша фабрика «TapTaza» - всегда рада выполнить ваши заказы в пошиве
             оптовых изделий.
           </Description>
         </HeaderContent>

@@ -61,7 +61,7 @@ const About = () => {
               </ImageTextContainer>
               <TextContainer>
                 <TextStyled>
-                  Наша фабрика «ТапТаза» - всегда рада выполнить ваши заказы в
+                  Наша фабрика «TapTaza» - всегда рада выполнить ваши заказы в
                   пошиве оптовых изделий.
                 </TextStyled>
                 <TextStyled2>
