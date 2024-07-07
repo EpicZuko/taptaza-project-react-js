@@ -56,6 +56,9 @@ const ProductStyledContainer = styled.div`
   background: rgba(244, 245, 247, 1);
   padding-top: 60px;
   padding-bottom: 60px;
+  @media (max-width: 768px) {
+    padding-top: 10px;
+  }
 `;
 const ProductH1Styled = styled.h1`
   height: 61px;
@@ -70,7 +73,8 @@ const ProductH1Styled = styled.h1`
   margin-top: 53px;
   color: rgba(51, 51, 51, 1);
   @media (max-width: 768px) {
-    margin-bottom: 100px;
+    margin-bottom: 40px;
+    font-size: 40px;
   }
 `;
 const ProductContainer = styled.div`

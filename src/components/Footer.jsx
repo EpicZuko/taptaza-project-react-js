@@ -8,7 +8,11 @@ import message from "../assets/Group 955.svg";
 
 export function Footers() {
   return (
-    <Footer container className="bg-gray-900 text-white py-8">
+    <Footer
+      container
+      className="text-blue py-8"
+      style={{ background: "rgba(239, 239, 111, 1) " }}
+    >
       <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
         <div className="flex flex-col items-start">
           <img src={logo} alt="TapTaza Logo" className="mb-4" />
@@ -21,13 +25,20 @@ export function Footers() {
               href="https://api.whatsapp.com/send?phone=996509570063"
               icon={BsWhatsapp}
               className="text-pink-500"
+              style={{ color: "rgba(0, 51, 102, 1)" }}
             />
             <Footer.Icon
               href="https://www.instagram.com/taptaza.fabric.kg?igsh=MXZ6bW1oMDVuZHB4MQ=="
               icon={BsInstagram}
               className="text-pink-500"
+              style={{ color: "rgba(0, 51, 102, 1)" }}
             />
-            <Footer.Icon href="#" icon={BsTelegram} className="text-pink-500" />
+            <Footer.Icon
+              href="#"
+              icon={BsTelegram}
+              className="text-pink-500"
+              style={{ color: "rgba(0, 51, 102, 1)" }}
+            />
           </div>
         </div>
         <div>
@@ -77,7 +88,7 @@ export function Footers() {
               <button
                 className="mt-4 px-4 py-2 rounded-md"
                 style={{
-                  backgroundColor: "rgba(231, 113, 125, 1)",
+                  backgroundColor: "rgba(0, 51, 102, 1)",
                   color: "#ffffff",
                 }}
               >

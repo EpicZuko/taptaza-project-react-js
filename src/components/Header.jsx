@@ -118,11 +118,12 @@ export default Header;
 const HeaderStyled = styled.header`
   width: 100%;
   height: 87.03px;
-  background-color: ${({ isSticky }) => (isSticky ? "#1a1a1a" : "transparent")};
+  background-color: ${({ isSticky }) =>
+    isSticky ? "rgba(239, 239, 111, 1)" : "rgba(239, 239, 111, 1)"};
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: 3px solid white;
+  /* border-bottom: 3px solid black; */
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -144,12 +145,12 @@ const HeaderLogo = styled.img`
 
 const NavItem = styled(Link)`
   cursor: pointer;
-  color: white;
+  color: rgba(46, 46, 46, 1);
   font-weight: 700;
   font-size: 20px;
   margin-left: 10px;
   &:hover {
-    color: #e7717d;
+    color: #fff;
   }
   @media (max-width: 768px) {
     margin-left: 4px;
@@ -178,11 +179,11 @@ const NavigationStyled = styled.nav`
 
   > ${NavItem} {
     cursor: pointer;
-    color: white;
+    color: rgba(46, 46, 46, 1);
     font-weight: 700;
     font-size: 20px;
     &:hover {
-      color: #e7717d;
+      color: #fff;
     }
   }
 `;
@@ -209,7 +210,7 @@ const MobileMenu = styled.div`
     top: 76px;
     left: 0;
     width: 100%;
-    background-color: #1a1a1a;
+    background-color: rgba(239, 239, 111, 1);
     padding: 20px;
     transition: transform 0.3s ease;
     transform: ${({ isOpen }) =>
@@ -221,7 +222,7 @@ const LocationContactContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: white;
+  color: rgba(46, 46, 46, 1);
   /* width: 270px; */
 
   @media (max-width: 768px) {
@@ -234,6 +235,7 @@ const LocationContactContainer = styled.div`
     padding: 20px;
     transition: top 0.3s ease;
     background-color: #1a1a1a;
+    display: none;
   }
 `;
 
@@ -305,10 +307,9 @@ const Title = styled.h1`
   text-align: center;
   color: #ffffff;
   margin-bottom: 20px;
-
-  &:hover {
-    color: #e7717d;
-  }
+  /* &:hover {
+    color: rgba(239, 239, 111, 1);
+  } */
   @media (max-width: 768px) {
     font-size: 24px;
   }
@@ -318,11 +319,10 @@ const Description = styled.p`
   font-weight: 500;
   font-size: 24px;
   text-align: center;
-  color: #e7717d;
-
-  &:hover {
+  color: rgba(239, 239, 111, 1);
+  /* &:hover {
     color: white;
-  }
+  } */
   @media (max-width: 768px) {
     font-size: 18px;
   }

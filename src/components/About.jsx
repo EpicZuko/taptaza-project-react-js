@@ -255,6 +255,7 @@ const AboutContainer = styled.div`
     margin-top: 50px;
     flex-direction: column;
     align-items: center;
+    gap: 100px;
   }
 `;
 
@@ -286,7 +287,7 @@ const ImageTextContainer = styled.div`
 const ImagesAboutStyled = styled.img`
   width: 100%;
   transition: transform 0.3s ease-in-out;
-  border: 3px solid rgba(231, 113, 125, 1);
+  border: 3px solid rgba(239, 239, 111, 1);
   padding: 23px;
   &:hover {
     transform: scale(0.95);
@@ -318,8 +319,8 @@ const ImagesStyledAbout = styled.img`
   }
 
   @media (max-width: 480px) {
-    left: 110px;
-    top: 230px;
+    left: 185px;
+    top: 290px;
     width: 240px;
     height: 240px;
   }
@@ -340,6 +341,9 @@ const TextStyled = styled.p`
   line-height: 36.33px;
   color: rgba(51, 51, 51, 1);
   margin-bottom: 39px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 const TextStyled2 = styled.p`
@@ -349,6 +353,9 @@ const TextStyled2 = styled.p`
   line-height: 36.33px;
   color: rgba(51, 51, 51, 1);
   margin-bottom: 35px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 const TextStyled3 = styled.p`
@@ -357,6 +364,9 @@ const TextStyled3 = styled.p`
   font-weight: 500;
   line-height: 36.33px;
   color: rgba(231, 113, 125, 1);
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 const WhyUsStyled = styled.h1`
   height: 61px;

@@ -48,7 +48,7 @@ const NewsletterH1Styled = styled.h1`
   font-weight: 700;
   line-height: 60.55px;
   text-align: right;
-  color: rgba(231, 113, 125, 1);
+  color: rgba(0, 51, 102, 1);
   margin: 10px 0;
 
   @media (max-width: 768px) {
@@ -58,6 +58,7 @@ const NewsletterH1Styled = styled.h1`
 
   @media (max-width: 480px) {
     font-size: 30px;
+    height: 10px;
   }
 `;
 
@@ -68,16 +69,17 @@ const NumberStyled = styled.div`
   font-weight: 700;
   line-height: 108.99px;
   text-align: right;
-  color: rgba(231, 113, 125, 1);
+  color: rgba(0, 51, 102, 1);
   margin: 10px 0;
 
   @media (max-width: 768px) {
-    font-size: 70px;
+    font-size: 50px;
     text-align: center;
   }
 
   @media (max-width: 480px) {
-    font-size: 50px;
+    font-size: 40px;
+    height: 70px;
   }
 `;
 
@@ -89,7 +91,7 @@ const NewSletterTextStyled = styled.p`
   font-weight: 500;
   line-height: 36.33px;
   text-align: right;
-  color: rgba(231, 113, 125, 1);
+  color: rgba(0, 51, 102, 1);
   margin: 10px 0;
 
   @media (max-width: 768px) {
@@ -98,6 +100,6 @@ const NewSletterTextStyled = styled.p`
   }
 
   @media (max-width: 480px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 `;
