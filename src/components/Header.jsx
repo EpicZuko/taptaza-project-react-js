@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import Logo from "../assets/Logo.svg";
+import Logo from "../assets/photo1720537791.jpeg";
 import LocationImage from "../assets/footerLocation.svg";
 import PhoneImage from "../assets/footerNumber.svg";
 import Bac from "../assets/bac.svg";
@@ -141,6 +141,7 @@ const HeaderStyled = styled.header`
 const HeaderLogo = styled.img`
   width: 76px;
   height: 76px;
+  border-radius: 50%;
 `;
 
 const NavItem = styled(Link)`

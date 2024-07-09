@@ -1,7 +1,7 @@
 import React from "react";
 import { Footer } from "flowbite-react";
 import { BsWhatsapp, BsInstagram, BsTelegram } from "react-icons/bs";
-import logo from "../assets/footericon.svg"; // Adjust the import path as necessary
+import logo from "../assets/photo1720537791.jpeg"; // Adjust the import path as necessary
 import number from "../assets/footerNumber.svg";
 import location from "../assets/footerLocation.svg";
 import message from "../assets/Group 955.svg";
@@ -15,7 +15,12 @@ export function Footers() {
     >
       <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
         <div className="flex flex-col items-start">
-          <img src={logo} alt="TapTaza Logo" className="mb-4" />
+          <img
+            style={{ width: "118px", height: "126px", borderRadius: "50%" }}
+            src={logo}
+            alt="TapTaza Logo"
+            className="mb-4"
+          />
           <p className="text-lg font-medium w-[346px] leading-[24.22px]">
             У нас швейное производство полного цикла. Специализируемся на пошиве
             одежды первого, второго и третьего слоя.
