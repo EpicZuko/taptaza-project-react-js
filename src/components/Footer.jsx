@@ -254,8 +254,16 @@ const Button = styled.button`
   &:hover {
     opacity: 0.8;
   }
+  @media (max-width:778px) {
+  
+    width: ${({ primary }) => (primary ? "150px" : "100px")};
+  
+  }
 `;
 const ButtonDivStlyed = styled.button`
   display: flex;
   gap: 60px;
+  @media (max-width: 778px) {
+    gap: 20px;
+  }
 `;
