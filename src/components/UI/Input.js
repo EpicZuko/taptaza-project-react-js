@@ -31,4 +31,10 @@ const InputStyled = styled.input`
   margin-bottom: 20px;
   border: ${(props) =>
     props.variant === "" && "2px solid rgba(193, 193, 193, 1)"};
+  @media (max-width: 778px) {
+    width: 400px;
+  }
+  @media (max-width: 432px) {
+    width: 280px;
+  }
 `;

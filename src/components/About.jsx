@@ -1,38 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import Trouses from "../assets/Trouses.svg";
-import BlousesAndShirts from "../assets/BlousesAndShirts.svg";
-import Skirt from "../assets/Skirt.svg";
-import Shorts from "../assets/Shorts.svg";
-import Tunics from "../assets/Tunics.svg";
-import Dresses from "../assets/Dresses.svg";
-import SportsWear from "../assets/SportsWear.svg";
-import Turtles from "../assets/Turtules.svg";
-import Costume from "../assets/Costume.svg";
-import ThirtTops from "../assets/TshirtTops.svg";
-import Jackets from "../assets/Jackets.svg";
-import SweatshirtAndHoodie from "../assets/SweatshirtAndHoodie.svg";
 import aboutIcons from "../assets/about.svg";
 import AboutSvg from "../assets/aboutSvg.svg";
 import AboutSvg2 from "../assets/aboutSvg2.svg";
 import AboutGolachka from "../assets/aboutGolachka.svg";
+import { Link } from "react-router-dom";
 
 const About = () => {
-  const about = [
-    { id: 1, title: "БРЮКИ", image: Trouses },
-    { id: 2, title: "БЛУЗКИ И РУБАШКИ", image: BlousesAndShirts },
-    { id: 3, title: "ЮБКА", image: Skirt },
-    { id: 4, title: "ШОРТЫ", image: Shorts },
-    { id: 5, title: "ТУНИКИ", image: Tunics },
-    { id: 6, title: "ПЛАТЬЯ", image: Dresses },
-    { id: 7, title: "СПОРТИВНЫЕ ОДЕЖДЫ", image: SportsWear },
-    { id: 8, title: "ВОДОЛАЗКИ", image: Turtles },
-    { id: 9, title: "КОСТЬЮМ", image: Costume },
-    { id: 10, title: "ФУТБОЛКА И ТОПЫ", image: ThirtTops },
-    { id: 11, title: "ПИДЖАКИ", image: Jackets },
-    { id: 12, title: "СВИДШОТ И ХУДИ", image: SweatshirtAndHoodie },
-  ];
+  const [items, setItems] = useState([]);
 
+  useEffect(() => {
+    const savedData = JSON.parse(localStorage.getItem("profileData")) || [];
+    setItems(savedData);
+  }, []);
+  console.log(items);
   return (
     <>
       <SectionStyled id="katalog">
@@ -40,14 +21,20 @@ const About = () => {
           <Title>Что мы шьём?</Title>
         </TitleWrapper>
         <CardContainer>
-          {about.map((elem) => (
-            <Card key={elem.id}>
-              <img src={elem.image} alt={elem.title} />
-              <CardTitle>
-                <TitleText>{elem.title}</TitleText>
-              </CardTitle>
-            </Card>
-          ))}
+          {items.length > 0 ? (
+            items.map((elem) => (
+              <Link to={`/inner-page/${elem.id}`}>
+                <Card key={elem?.id}>
+                  <img src={elem?.fileURLs[0]} alt={elem.productName} />
+                  <CardTitle>
+                    <TitleText>{elem.productName}</TitleText>
+                  </CardTitle>
+                </Card>
+              </Link>
+            ))
+          ) : (
+            <p>Нет элементов для отображения</p>
+          )}
         </CardContainer>
       </SectionStyled>
       <ContainerStyled images={aboutIcons} id="about">
@@ -202,15 +189,15 @@ const Card = styled.div`
   overflow: hidden;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   background-color: #fff;
+  position: relative;
 
   &:hover {
     transform: translateY(-10px);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   }
-
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
   }
 `;
