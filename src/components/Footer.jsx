@@ -255,7 +255,9 @@ const Button = styled.button`
     opacity: 0.8;
   }
   @media (max-width:778px) {
+  
     width: ${({ primary }) => (primary ? "150px" : "100px")};
+  
   }
 `;
 const ButtonDivStlyed = styled.button`
